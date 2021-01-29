@@ -1,0 +1,20 @@
+.close-btn {
+	display: block;
+	width: 4px;
+	height: 36px;
+	background-color: red;
+
+	transform: rotate(50deg);
+}
+
+.close-btn::before {
+	content: "";
+
+
+	display: block;
+	width: 4px;
+	height: 36px;
+	background-color: blue;
+
+	transform: rotate(85deg);
+}
