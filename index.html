@@ -12,75 +12,77 @@
 
 	<header class="header">
 		<div class="container">
-			<div class="header__inner">
-			<a class="logo" href="#">
-				<img class="logo__img" src="images/logo.svg" alt="Мебельная компания «СБК»">
-			</a>
-			<span class="close-btn"></span>
+			<div class="header__wrapper">
+				<a class="logo" href="#">
+					<img class="logo__img" src="images/logo.svg" alt="Мебельная компания «СБК»">
+				</a>
+				<div class="header__box">
+					<a class="link header__phone" href="+79054636212">+7 (905) 463-62-12</a>
+					<span class="close-btn"></span>
+				</div>
 			</div>
-			<a class="link header__phone" href="+79054636212">+7 (905) 463-62-12</a>
-			<a class="link btn header-btn">позвоните нам</a>
+
 
 			<nav class="menu header__menu">
 
 				<ul class="list menu__list">
 
-					<li class="menu__item menu__item--category">
-						<a class="link menu__link menu__link--title" href="#">Комплектующие</a>
-						<ul class="list menu__list">
+					<li class="menu__category">
+						<a class="link menu__link" href="#">Комплектующие</a>
+						<ul class="list menu__sublist">
 							<li class="menu__item">
-								<a class="link menu__link" href="#">Столешницы</a>
+								<a class="link menu__sublink" href="#">Столешницы</a>
 							</li>
 							<li class="menu__item">
-								<a class="link menu__link" href="#">ЛДСП</a>
+								<a class="link menu__sublink" href="#">ЛДСП</a>
 							</li>
 							<li class="menu__item">
-								<a class="link menu__link" href="#">Фурнитура</a>
-							</li>
-						</ul>
-					</li>
-
-					<li class="menu__item menu__item--category">
-						<a class="link menu__link menu__link--title" href="#">Услуги</a>
-						<ul class="list menu__list">
-							<li class="menu__item">
-								<a class="link menu__link" href="#">Распил</a>
-							</li>
-							<li class="menu__item">
-								<a class="link menu__link" href="#">Замер</a>
-							</li>
-							<li class="menu__item">
-								<a class="link menu__link" href="#">Доставка</a>
-							</li>
-							<li class="menu__item">
-								<a class="link menu__link" href="#">Условия гарантии</a>
-							</li>
-							<li class="menu__item">
-								<a class="link menu__link" href="#">Производство по индивидуальному заказу</a>
+								<a class="link menu__sublink" href="#">Фурнитура</a>
 							</li>
 						</ul>
 					</li>
 
-					<li class="menu__item menu__item--category">
-						<a class="link menu__link menu__link--title" href="#">Продажа</a>
-						<ul class="list menu__list">
+					<li class="menu__category">
+						<a class="link menu__link" href="#">Услуги</a>
+						<ul class="list menu__sublist">
 							<li class="menu__item">
-								<a class="link menu__link" href="#">Вся мебель</a>
+								<a class="link menu__sublink" href="#">Распил</a>
 							</li>
 							<li class="menu__item">
-								<a class="link menu__link" href="#">Стулья</a>
+								<a class="link menu__sublink" href="#">Замер</a>
 							</li>
 							<li class="menu__item">
-								<a class="link menu__link" href="#">Столы</a>
+								<a class="link menu__sublink" href="#">Доставка</a>
 							</li>
 							<li class="menu__item">
-								<a class="link menu__link" href="#">Мебель LOFT</a>
+								<a class="link menu__sublink" href="#">Условия гарантии</a>
 							</li>
 							<li class="menu__item">
-								<a class="link menu__link" href="#">Матрасы</a>
+								<a class="link menu__sublink" href="#">Производство по индивидуальному заказу</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="menu__category">
+						<a class="link menu__link" href="#">Продажа</a>
+						<ul class="list menu__sublist">
+							<li class="menu__item">
+								<a class="link menu__sublink" href="#">Вся мебель</a>
 							</li>
 							<li class="menu__item">
-								<a class="link menu__link" href="#"><b>Кухни на заказ</b></a>
+								<a class="link menu__sublink" href="#">Стулья</a>
+							</li>
+							<li class="menu__item">
+								<a class="link menu__sublink" href="#">Столы</a>
+							</li>
+							<li class="menu__item">
+								<a class="link menu__sublink" href="#">Мебель LOFT</a>
+							</li>
+							<li class="menu__item">
+								<a class="link menu__sublink" href="#">Матрасы</a>
+							</li>
+							<li class="menu__item">
+								<a class="link menu__sublink" href="#"><b>Кухни на заказ</b></a>
 							</li>
 						</ul>
 					</li>
@@ -93,11 +95,17 @@
 
 		<section class="hero page__section">
 			<div class="container">
-				<h1 class="title hero__title"></h1>
-				<p class="hero__text"></p>
+				<h1 class="title hero__title">Производим мебель на заказ в Ставропольском крае в течении 30 дней</h1>
+				<p class="hero__text">Доставим и соберем в любой точке края</p>
 				<form class="lead-form hero__form" action="" method="POST">
-					<input type="text" class="lead-form__input">
-					<input type="text" class="lead-form__input">
+					<label class="visually-hidden">
+						Как вас зовут
+						<input type="text" class="lead-form__input" placeholder="Как вас зовут">
+					</label>
+					<label class="visually-hidden">
+						Как вас зовут
+						<input type="text" class="lead-form__input">
+					</label>
 					<button class="btn-action hero__btn" type="submit">Перезвоните мне</button>
 					<p class="form__policy">соглашаюсь на обработку<br>персональных данных</p>
 				</form>

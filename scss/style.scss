@@ -1,9 +1,25 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+}
 
 
-@import "_page";
+@import "_mixins";
 @import "_vars";
 @import "_link";
 @import "_list";
 @import "_container";
+@import "_page";
 @import "_close-btn";
 @import "_header";
+@import "_menu";
+@import "_hero";

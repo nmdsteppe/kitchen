@@ -1,20 +1,20 @@
 .close-btn {
-	display: block;
+	display: inline-block;
 	width: 4px;
 	height: 36px;
-	background-color: red;
 
-	transform: rotate(50deg);
-}
+	background-color: #000;
 
-.close-btn::before {
-	content: "";
+	transform: rotate(36deg);
 
+	&::before {
+		content: "";
 
-	display: block;
-	width: 4px;
-	height: 36px;
-	background-color: blue;
+		display: block;
+		width: 4px;
+		height: 36px;
+		background-color: #000;
 
-	transform: rotate(85deg);
+		transform: rotate(110deg);
+	}
 }
