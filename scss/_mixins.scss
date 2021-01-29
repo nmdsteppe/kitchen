@@ -1,0 +1,9 @@
+// Миксин для автоматического расчета px в vw под десктоп
+@function vw($value, $base: 1440) {
+	@return $value / $base * 100vw;
+}
+
+// Миксин для автоматического расчета px в vw под мобайл
+@function vmin($value, $base: 320) {
+	@return $value / $base * 100vmin;
+}
