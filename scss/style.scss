@@ -12,13 +12,19 @@ img {
 	max-width: 100%;
 }
 
+br {
+	display: block;
+	margin: 10px 0;
+}
 
 @import "_mixins";
 @import "_vars";
+@import "_fonts";
 @import "_link";
 @import "_list";
 @import "_container";
 @import "_page";
+@import "_logo";
 @import "_close-btn";
 @import "_header";
 @import "_menu";

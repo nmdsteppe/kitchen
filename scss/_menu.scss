@@ -2,3 +2,55 @@
 	display: flex;
 	justify-content: space-between;
 }
+
+.menu__category {
+	padding-top: vw(28);
+	max-width: vw(246);
+}
+
+.menu__category:nth-child(2) {
+	margin-right: vw(15);
+}
+
+.menu__category:last-child {
+	margin-right: vw(188);
+}
+
+.menu__link {
+	font-size: vw(24);
+	font-weight: 500;
+	margin-bottom: vw(24);
+}
+
+.menu__item {
+	margin-bottom: vw(11);
+}
+
+.menu__sublist {
+	padding-top: 2px;
+}
+
+.menu__line-break {
+	display: block;
+	margin-top: -4px;
+}
+
+.menu__sublink {
+	position: relative;
+}
+
+.menu__sublink::after {
+	content: '';
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+}
+
+.menu__sublink:hover::after {
+	border-bottom: 1px solid #000;
+}
+
+.menu__sublink--bold {
+	font-weight: 700;
+}

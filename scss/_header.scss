@@ -1,15 +1,20 @@
 .header__wrapper {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	padding-top: 21px;
+	align-items: flex-start;
+	padding-top: vw(21);
 }
 
 .header__box {
 	display: flex;
 	align-items: center;
+	padding-right: vw(18);
 }
 
 .header__phone {
-	margin-right: vw(80);
+	margin-right: vw(95);
+	padding-top: 3px;
+
+	font-size: vw(22);
+	font-weight: 500;
 }
