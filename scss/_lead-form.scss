@@ -1,0 +1,34 @@
+.lead-form {
+	display: flex;
+	flex-direction: column;
+	max-width: vw(286);
+}
+
+.lead-form__input {
+	margin-bottom: vw(10);
+	padding: vw(17) vw(101) vw(17) vw(33);
+	font-size: vw(16);
+	font-weight: 500;
+	color: #a7a7a7;
+	border: none;
+	background: rgba(#fff, 0.4);
+}
+
+.lead-form__policy {
+	position: relative;
+	margin-top: vw(6);
+	align-self: flex-end;
+	max-width: vw(180);
+	font-size: vw(13);
+	font-style: italic;
+	line-height: vw(13);
+	text-align: right;
+	color: rgba($color: $text-color, $alpha: 0.4);
+}
+
+.lead-form__policy::before {
+	content: url("../images/icons/check.svg");
+	position: absolute;
+	top: 0;
+	left: 0;
+}
