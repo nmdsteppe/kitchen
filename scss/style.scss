@@ -10,11 +10,11 @@ html {
 
 img {
 	max-width: 100%;
+	margin: 0;
 }
 
-br {
-	display: block;
-	margin: 10px 0;
+li {
+	padding: 0;
 }
 
 @import "_mixins";
@@ -26,7 +26,10 @@ br {
 @import "visually-hidden";
 @import "_page";
 @import "_logo";
+@import "_title";
 @import "_header";
 @import "_hero";
 @import "lead-form";
 @import "_btn-action";
+@import "_benefits";
+@import "_nav-catalog";

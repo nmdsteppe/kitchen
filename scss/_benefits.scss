@@ -1,0 +1,27 @@
+.benefits__wrapper {
+	position: relative;
+}
+
+.benefits__inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateY(-71%);
+	display: flex;
+}
+
+.benefits__text {
+	max-width: vw(520);
+	padding: vw(54) vw(59);
+	font-size: vw(24);
+	background: url("../images/benefits-bg.png") no-repeat;
+	background-size: cover;
+}
+
+.benefits__text:first-child {
+	margin-right: vw(31);
+}
+.benefits__text:nth-child(2) {
+	margin-right: vw(75);
+}
+
