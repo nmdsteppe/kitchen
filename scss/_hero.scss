@@ -1,23 +1,23 @@
 .hero {
-	min-height: vw(845);
-	background: url("../images/hero-desktop-bg.jpg") center -80px no-repeat;
+	background: url("../images/hero-desktop-bg.jpg") 50% 255% no-repeat;
 	background-size: cover;
 }
 
+.hero__wrapper {
+	padding-top: vw(60);
+	padding-bottom: vw(266);
+
+}
+
 .hero__title {
-	max-width: vw(673);
-	padding-top: vw(93);
-	font-size: vw(48);
-	font-weight: 500;
-	line-height: vw(48);
+	margin-bottom: vw(12);
 }
 
 .hero__text {
 	max-width: vw(236);
 	margin-bottom: vw(61);
 	font-size: vw(24);
-	margin-top: vw(-12);
-	line-height: vw(32);
+	line-height: vw(29);
 }
 
 .hero__btn {

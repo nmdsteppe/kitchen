@@ -1,12 +1,9 @@
-.header {
-	height: 48px;
-}
-
 .header__wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	padding-top: vw(21);
+	padding-top: vw(20);
+    padding-bottom: vw(13);
 }
 
 .header__box {
