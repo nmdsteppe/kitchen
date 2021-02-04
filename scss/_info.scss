@@ -1,0 +1,26 @@
+.info__wrapper {
+	padding-top: vw(97);
+	padding-bottom: vw(154);
+}
+
+.info__list {
+	display: flex;
+	justify-content: space-between;
+	max-width: vw(967);
+}
+
+.info__item {
+}
+
+.info__img {
+	height: vw(58);
+	width: vw(58);
+}
+
+.info__text {
+}
+
+.info__link {
+	font-size: vw(15);
+	border-bottom: 1px solid #000;
+}

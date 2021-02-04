@@ -14,13 +14,18 @@
 }
 
 .hero__text {
+	position: relative;
 	max-width: vw(236);
 	margin-bottom: vw(61);
 	font-size: vw(24);
 	line-height: vw(29);
 }
 
-.hero__btn {
-	position: relative;
-	padding-right: 180px;
+.hero__text::after {
+	content: url('../images/icons/point-arrow-icon.svg');
+	position: absolute;
+	width: vw(91);
+	height: vw(117);
+	top: -10%;
+    right: -50%;
 }
