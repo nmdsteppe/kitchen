@@ -10,11 +10,6 @@ html {
 
 img {
 	max-width: 100%;
-	margin: 0;
-}
-
-li {
-	padding: 0;
 }
 
 @import "_mixins";
@@ -33,3 +28,7 @@ li {
 @import "_btn-action";
 @import "_benefits";
 @import "_nav-catalog";
+@import "_info";
+@import "_catalog";
+@import "_slider-catalog";
+@import "_btn-more";

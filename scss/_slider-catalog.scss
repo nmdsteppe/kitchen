@@ -1,0 +1,33 @@
+.slider-catalog {
+	border-bottom: 1px solid $text-color;
+}
+
+.slider-catalog__list {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: vw(30);
+}
+
+.slider-catalog__item {
+	max-width: vw(415);
+}
+
+.slider-catalog__img {
+	margin-bottom: vw(10);
+}
+
+.slider-catalog__title {
+	margin: 0;
+	font-size: vw(24);
+	font-weight: 400;
+}
+
+.slider-catalog__text {
+	margin: 0;
+	font-size: vw(16);
+	color: rgba($color: $text-color, $alpha: 0.5);
+}
+
+.slider-catalog__btn {
+	margin-bottom: vw(31);
+}
