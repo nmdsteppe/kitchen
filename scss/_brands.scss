@@ -1,0 +1,15 @@
+.brands__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.brands__text {
+	padding-top: vw(60);
+}
+
+.brands__img {
+	max-height: vw(120);
+	max-width: vw(160);
+	margin-right: vw(20);
+}

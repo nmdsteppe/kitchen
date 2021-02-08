@@ -6,6 +6,12 @@
     padding-bottom: vw(13);
 }
 
+.header__logo {
+	display: block;
+	width: vw(157);
+	height: vw(47);
+}
+
 .header__box {
 	display: flex;
 	align-items: center;

@@ -1,11 +1,16 @@
 .btn-action {
 	padding: vw(12) vw(64);
+	text-align: center;
 	background-color: $accent-color;
 	border: none;
 
 	&--hero {
 		position: relative;
 		padding: vw(20) vw(93) vw(20) vw(23);
+	}
+
+	&--white {
+		background-color: #fff;
 	}
 
 	&--hero::before {

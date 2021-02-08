@@ -2,6 +2,10 @@
 	border-bottom: 1px solid $text-color;
 }
 
+.slider-catalog__headline {
+	margin-bottom: vw(48);
+}
+
 .slider-catalog__list {
 	display: flex;
 	justify-content: space-between;

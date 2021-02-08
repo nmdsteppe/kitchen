@@ -1,0 +1,61 @@
+.add-info {
+	padding: vw(60) vw(131) vw(21) vw(50);
+	background-color: #fff;
+}
+
+.add-info--delivery,
+.add-info--warranty {
+	max-width: vw(630);
+	position: relative;
+}
+
+.add-info--delivery::before {
+	content: "";
+	position: absolute;
+	top: -15%;
+	left: 9%;
+	height: vw(80);
+	width: vw(80);
+	background: url("../images/icons/delivery-icon.svg") no-repeat;
+	background-size: cover;
+}
+
+.add-info--warranty::before {
+	content: "";
+	position: absolute;
+	top: -10%;
+	left: 9%;
+	height: vw(60);
+	width: vw(60);
+	background: url("../images/icons/warranty-contract-icon.svg") no-repeat;
+	background-size: cover;
+}
+
+.add-info--adress {
+	font-size: vw(24);
+}
+
+.add-info__wrapper {
+	display: flex;
+}
+
+.add-info__inner {
+	max-width: vw(540);
+}
+
+.add-info__inner:not(:last-child) {
+	margin-right: vw(110);
+}
+
+.add-info__link {
+	border-bottom: 1px solid $text-color;
+}
+
+.add-info__link--yellow {
+	color: #edad3b;
+	border-color: #edad3b;
+}
+
+.add-info__text--bold {
+	font-weight: 700;
+}

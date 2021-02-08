@@ -1,16 +1,22 @@
 .hero {
+	min-height: vw(870);
 	background: url("../images/hero-desktop-bg.jpg") 50% 255% no-repeat;
 	background-size: cover;
 }
 
 .hero__wrapper {
-	padding-top: vw(60);
-	padding-bottom: vw(266);
+	padding: vw(93) vw(11);
 
 }
 
 .hero__title {
 	margin-bottom: vw(12);
+}
+
+.hero__form {
+	max-width: vw(286);
+	display: flex;
+	flex-direction: column;
 }
 
 .hero__text {

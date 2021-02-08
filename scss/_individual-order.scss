@@ -1,0 +1,64 @@
+.individual-order {
+	background-color: $accent-color;
+}
+
+.individual-order__wrapper {
+	position: relative;
+	padding: vw(60) 0;
+}
+
+.individual-order__title {
+	position: absolute;
+	top: 8%;
+	right: 10%;
+}
+
+.individual-order__inner {
+	display: flex;
+	align-items: center;
+}
+
+.individual-order__gallery {
+	margin-right: vw(40);
+}
+
+.individual-order__steps {
+	max-width: vw(538);
+	padding-top: vw(60);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.individual-order__list {
+	counter-reset: myCounter;
+	margin-bottom: vw(40);
+}
+
+.individual-order__item {
+	position: relative;
+	padding-left: vw(60);
+}
+
+.individual-order__item:not(:last-child) {
+	margin-bottom: vw(40);
+}
+
+.individual-order__item::before {
+	content: counter(myCounter);
+	counter-increment: myCounter;
+	position: absolute;
+	top: -3%;
+	left: 0;
+	font-size: vw(36);
+}
+
+.individual-order__item:not(:last-child):after {
+	content: url(../images/icons/step-check-icon.svg);
+	position: absolute;
+	top: 100%;
+	left: vw(4);
+	width: vw(11);
+	height: vw(6);
+	opacity: 0.5;
+}

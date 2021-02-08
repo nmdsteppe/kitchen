@@ -1,0 +1,13 @@
+.gallery {
+	max-width: vw(583);
+}
+
+.gallery__big-image img {
+	height: vw(540);
+	object-fit: cover;
+}
+
+.gallery__preview-image img {
+	width: vw(79);
+	height: vw(73);
+}
