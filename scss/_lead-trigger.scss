@@ -1,0 +1,26 @@
+.lead-trigger {
+	min-height: vw(800);
+	background: url("../images/footer-desktop-bg.jpg") 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.lead-trigger__wrapper {
+	padding-top: vw(70);
+}
+
+.lead-trigger__form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: vw(500);
+	margin: 0 auto;
+	margin-bottom: vw(200);
+	padding: vw(50);
+	background: url("../images/lead-trigger-form-bg.png") no-repeat;
+	background-size: cover;
+}
+
+.lead-trigger__btn {
+	margin-top: vw(30);
+	margin-bottom: vw(10);
+}

@@ -1,0 +1,14 @@
+.main__wrapper {
+	padding: vw(134) 0 vw(105);
+	background-color: $bg-color;
+}
+
+.main__inner {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: vw(100);
+}
+
+.main__section {
+	margin-bottom: vw(105);
+}

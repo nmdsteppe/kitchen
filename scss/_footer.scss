@@ -1,0 +1,42 @@
+.footer__contacts {
+	padding: vw(30) 0;
+	background-color: #a7a7a7;
+}
+
+.footer__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer__inner {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__text {
+	margin: 0;
+}
+
+.footer__link {
+	display: block;
+}
+
+.footer__logo {
+	width: vw(200);
+	height: vw(39);
+}
+
+.footer__nav {
+	background-color: #fff;
+}
+
+.footer__list {
+	display: flex;
+	justify-content: space-between;
+	padding: vw(30) 0;
+}
+
+.footer__link {
+	border-bottom: 1px solid #000;
+}

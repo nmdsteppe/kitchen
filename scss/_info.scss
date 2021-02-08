@@ -1,6 +1,5 @@
 .info__wrapper {
-	padding-top: vw(97);
-	padding-bottom: vw(154);
+	padding: vw(96) vw(12) vw(154);
 }
 
 .info__list {
@@ -9,15 +8,44 @@
 	max-width: vw(967);
 }
 
-.info__item {
-}
-
-.info__img {
-	height: vw(58);
-	width: vw(58);
-}
-
 .info__text {
+	position: relative;
+	margin: 0;
+	padding-top: vw(80);
+	font-size: vw(24);
+}
+
+.info__text--order::before {
+	content: "";
+	position: absolute;
+	height: vw(80);
+	width: vw(80);
+	top: 0;
+	left: 0;
+	background: url("../images/icons/kitchen-icon.svg") no-repeat;
+	background-size: cover;
+}
+
+.info__text--warranty::before {
+	content: "";
+	position: absolute;
+	height: vw(80);
+	width: vw(80);
+	top: 0;
+	left: 0;
+	background: url("../images/icons/warranty-contract-icon.svg") no-repeat;
+	background-size: cover;
+}
+
+.info__text--delivery::before {
+	content: "";
+	position: absolute;
+	height: vw(100);
+	width: vw(100);
+	top: 0;
+	left: 0;
+	background: url("../images/icons/delivery-icon.svg") no-repeat;
+	background-size: cover;
 }
 
 .info__link {

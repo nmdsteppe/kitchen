@@ -1,8 +1,13 @@
 .catalog {
-	background-color: #EEF0F4;
+	background-color: $bg-color;
 }
 
 .catalog__wrapper {
 	padding-top: vw(81);
 	padding-bottom: vw(67);
+	padding: vw(81) vw(10) vw(67);
+}
+
+.catalog__item:not(:last-child) {
+	margin-bottom: vw(145);
 }

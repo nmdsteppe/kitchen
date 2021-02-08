@@ -1,5 +1,16 @@
 .btn-more {
-	padding: vw(13) vw(48);
+	position: relative;
+	padding: vw(13) vw(55);
+	font-size: vw(16);
 	background: transparent;
 	border: 1px solid $text-color;
+}
+
+.btn-more::before {
+	content: url("../images/icons/arrow-down.svg");
+	position: absolute;
+	top: 25%;
+	left: 10%;
+	width: vw(8);
+	height: vw(23);
 }

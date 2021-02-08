@@ -1,0 +1,15 @@
+.inst__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: vw(250);
+}
+
+.inst__icon {
+	width: vw(60);
+	height: vw(60);
+	background: url('../images/icons/inst-icon.svg') 50% 50% no-repeat;
+	background-size: 50%;
+	background-color: $accent-color;
+	border-radius: 50%;
+}
