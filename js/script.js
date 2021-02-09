@@ -12,4 +12,10 @@ $(document).ready(function () {
 		e.preventDefault();
 	});
 
+	$('.slider-catalog').slick({
+		infinite: true,
+		slidesToShow: 3,
+		arrows: true,
+	});
+
 });

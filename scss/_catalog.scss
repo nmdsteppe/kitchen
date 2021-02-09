@@ -8,6 +8,15 @@
 	padding: vw(81) vw(10) vw(67);
 }
 
+.catalog__item {
+	padding-bottom: vw(80);
+	border-bottom: 1px solid $text-color;
+}
+
 .catalog__item:not(:last-child) {
 	margin-bottom: vw(145);
+}
+
+.catalog__headline {
+	margin-bottom: vw(48);
 }
