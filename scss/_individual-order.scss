@@ -54,11 +54,12 @@
 }
 
 .individual-order__item:not(:last-child):after {
-	content: url(../images/icons/step-check-icon.svg);
+	content: '';
 	position: absolute;
 	top: 100%;
 	left: vw(4);
 	width: vw(11);
 	height: vw(6);
+	background: url(../images/icons/step-check-icon.svg) center / 100% no-repeat;
 	opacity: 0.5;
 }
