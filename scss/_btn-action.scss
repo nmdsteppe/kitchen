@@ -4,42 +4,7 @@
 	background-color: $accent-color;
 	border: none;
 
-	&--hero {
-		position: relative;
-		padding: vw(20) vw(93) vw(20) vw(23);
-	}
-
 	&--white {
 		background-color: #fff;
 	}
-
-	&--hero::before {
-		content: '';
-		position: absolute;
-		top: 37%;
-		right: 20%;
-		width: vw(14);
-		height: vw(14);
-		background: url('../images/icons/phone-icon.svg') no-repeat;
-		z-index: 3;
-	}
-
-	&--hero::after {
-		content: '';
-		position: absolute;
-		top: 42%;
-		right: 9%;
-		width: vw(21);
-		height: vw(8);
-		background: url('../images/icons/arrow-icon.svg') no-repeat;
-	}
-}
-
-.btn-action__icons {
-	position: absolute;
-	top: 20%;
-	right: 5%;
-	width: vw(70);
-	height: vw(32);
-	background-color: rgba(#fff, 0.9);
 }

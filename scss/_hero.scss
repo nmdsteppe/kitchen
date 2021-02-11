@@ -6,7 +6,6 @@
 
 .hero__wrapper {
 	padding: vw(93) vw(11);
-
 }
 
 .hero__title {
@@ -19,6 +18,41 @@
 	flex-direction: column;
 }
 
+.hero__btn {
+	position: relative;
+	padding: vw(20) vw(93) vw(20) vw(23);
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 37%;
+		right: 20%;
+		width: vw(14);
+		height: vw(14);
+		background: url("../images/icons/phone-icon.svg") center / 100% no-repeat;
+		z-index: 3;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 42%;
+		right: 9%;
+		width: vw(21);
+		height: vw(8);
+		background: url("../images/icons/arrow-icon.svg") center / 100% no-repeat;
+	}
+}
+
+.hero__icons {
+	position: absolute;
+	top: 20%;
+	right: 5%;
+	width: vw(70);
+	height: vw(32);
+	background-color: rgba(#fff, 0.9);
+}
+
 .hero__text {
 	position: relative;
 	max-width: vw(236);
@@ -28,10 +62,11 @@
 }
 
 .hero__text::after {
-	content: url('../images/icons/point-arrow-icon.svg');
+	content: "";
 	position: absolute;
 	width: vw(91);
 	height: vw(117);
 	top: -10%;
-    right: -50%;
+	right: -50%;
+	background: url("../images/icons/point-arrow-icon.svg") center / 100% no-repeat;
 }
