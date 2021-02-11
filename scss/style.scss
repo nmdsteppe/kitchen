@@ -10,6 +10,7 @@ html {
 
 img {
 	max-width: 100%;
+	height: auto;
 }
 
 @import "_mixins";
@@ -39,3 +40,4 @@ img {
 @import "_brands";
 @import "lead-trigger";
 @import "_footer";
+@import "_product-popup";

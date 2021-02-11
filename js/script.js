@@ -18,4 +18,12 @@ $(document).ready(function () {
 		arrows: true,
 	});
 
+	$('.slider-catalog__link').on('click', function () {
+		$('.product-popup').addClass('open');
+	});
+
+	$('.product-popup__btn-close').on('click', function () {
+		$('.product-popup').removeClass('open');
+	});
+
 });
