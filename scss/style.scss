@@ -13,8 +13,15 @@ img {
 	height: auto;
 }
 
-@import "_mixins";
+svg {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover
+}
+
 @import "_vars";
+@import "_mixins";
 @import "_fonts";
 @import "_link";
 @import "_list";
@@ -23,10 +30,10 @@ img {
 @import "visually-hidden";
 @import "_page";
 @import "_title";
+@import "lead-form";
 @import "_main";
 @import "_header";
 @import "_hero";
-@import "lead-form";
 @import "_benefits";
 @import "_nav-catalog";
 @import "_info";

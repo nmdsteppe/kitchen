@@ -3,13 +3,24 @@
 	justify-content: space-between;
 	align-items: center;
 	max-width: vw(250);
+
+	@include _1024 {
+		max-width: 100%;
+		justify-content: start;
+	}
 }
 
 .inst__icon {
 	width: vw(60);
 	height: vw(60);
-	background: url('../images/icons/inst-icon.svg') 50% 50% no-repeat;
+	background: url("../images/icons/inst-icon.svg") 50% 50% no-repeat;
 	background-size: 50%;
 	background-color: $accent-color;
 	border-radius: 50%;
+
+	@include _1024 {
+		width: vmin(60);
+		height: vmin(60);
+		margin-right: vmin(10);
+	}
 }

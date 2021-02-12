@@ -1,15 +1,23 @@
 .lead-form__input {
 	display: block;
 	padding: vw(17) vw(101) vw(17) vw(33);
-	font-size: vw(16);
 	font-weight: 500;
 	color: #a7a7a7;
 	border: none;
 	background-color: rgba(#fff, 0.4);
+
+	@include _1024 {
+		padding: vmin(17) vmin(78) vmin(17) vmin(33);
+		background-color: rgba(#fff, 0.8);
+	}
 }
 
-.lead-form__input:not(:last-child) {
+.lead-form__label:not(:last-child) {
 	margin-bottom: vw(10);
+
+	@include _1024 {
+		margin-bottom: vmin(20);
+	}
 }
 
 .lead-form__input--transparent {
@@ -17,18 +25,31 @@
 	border-bottom: 1px solid #000;
 	background-color: transparent;
 	padding: vw(17) vw(101) vw(10) 0;
+
+	@include _1024 {
+		padding: vmin(0) vmin(101) vmin(5) 0;
+	}
 }
 
 .lead-form__title {
 	margin: 0;
 	margin-bottom: vw(20);
 	font-size: vw(36);
+
+	@include _1024 {
+		margin-bottom: vmin(20);
+		font-size: vmin(22);
+	}
 }
 
 .lead-form__text {
 	margin: 0;
 	margin-bottom: vw(30);
 	text-align: center;
+
+	@include _1024 {
+		margin-bottom: vmin(30);
+	}
 }
 
 .lead-form__policy {
@@ -36,9 +57,13 @@
 	margin-top: vw(6);
 	font-size: vw(13);
 	font-style: italic;
-	line-height: vw(13);
+	line-height: 1.2;
 	text-align: right;
 	color: rgba($color: $text-color, $alpha: 0.4);
+
+	@include _1024 {
+		font-size: vmin(10);
+	}
 }
 
 .lead-form__policy--white {
@@ -48,7 +73,7 @@
 }
 
 .lead-form__policy::before {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 0;
 	left: 38%;
@@ -58,7 +83,7 @@
 }
 
 .lead-form__policy--white::before {
-	content: '';
+	content: "";
 	left: 0;
 	background: url("../images/icons/check-white.svg") center / 100% no-repeat;
 }

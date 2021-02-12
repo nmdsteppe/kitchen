@@ -2,6 +2,10 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	@include _1024 {
+		flex-direction: column;
+	}
 }
 
 .brands__text {
@@ -12,4 +16,10 @@
 	max-height: vw(120);
 	max-width: vw(160);
 	margin-right: vw(20);
+
+	@include _1024 {
+		max-height: vmin(60);
+		max-width: vmin(80);
+		margin-right: vmin(10);
+	}
 }

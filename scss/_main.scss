@@ -6,6 +6,10 @@
 .main__inner {
 	display: flex;
 	margin-bottom: vw(100);
+
+	@include _1024 {
+		flex-direction: column;
+	}
 }
 
 .main__section {

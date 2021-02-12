@@ -1,6 +1,6 @@
 .nav-catalog__wrapper {
 	padding: vw(182) vw(10) vw(72);
-	border-bottom: 1px solid #E5E5E5;
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .nav-catalog__headline {
@@ -10,10 +10,18 @@
 .nav-catalog__list {
 	display: flex;
 	justify-content: space-between;
+
+	@include _1024 {
+		flex-direction: column;
+	}
 }
 
 .nav-catalog__item {
 	max-width: vw(242);
+
+	@include _1024 {
+		max-width: 100%;
+	}
 }
 
 .nav-catalog__img {
@@ -22,6 +30,5 @@
 
 .nav-catalog__title {
 	margin: 0;
-	font-size: vw(18);
 	font-weight: 400;
 }

@@ -11,15 +11,27 @@
 	position: absolute;
 	top: 8%;
 	right: 10%;
+
+	@include _1024 {
+		position: static;
+	}
 }
 
 .individual-order__inner {
 	display: flex;
 	align-items: center;
+
+	@include _1024 {
+		flex-direction: column;
+	}
 }
 
 .individual-order__gallery {
 	margin-right: vw(40);
+
+	@include _1024 {
+		margin: 0;
+	}
 }
 
 .individual-order__steps {
@@ -28,6 +40,10 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+
+	@include _1024 {
+		max-width: 100%;
+	}
 }
 
 .individual-order__list {
@@ -38,6 +54,10 @@
 .individual-order__item {
 	position: relative;
 	padding-left: vw(60);
+
+	@include _1024 {
+		padding-left: vmin(30);
+	}
 }
 
 .individual-order__item:not(:last-child) {
@@ -51,6 +71,10 @@
 	top: -3%;
 	left: 0;
 	font-size: vw(36);
+
+	@include _1024 {
+		font-size: vmin(24);
+	}
 }
 
 .individual-order__item:not(:last-child):after {
@@ -62,4 +86,8 @@
 	height: vw(6);
 	background: url(../images/icons/step-check-icon.svg) center / 100% no-repeat;
 	opacity: 0.5;
+
+	@include _1024 {
+		display: none;
+	}
 }

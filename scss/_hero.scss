@@ -1,7 +1,12 @@
 .hero {
 	min-height: vw(870);
-	background: url("../images/hero-desktop-bg.jpg") 50% 255% no-repeat;
-	background-size: cover;
+	background: url("../images/hero-desktop-bg.jpg") 50% 255% / cover no-repeat;
+	background-color: $bg-color;
+
+	@include _1024 {
+		min-height: vmin(500);
+		background-image: none;
+	}
 }
 
 .hero__wrapper {
@@ -9,18 +14,32 @@
 }
 
 .hero__title {
+	max-width: vw(680);
 	margin-bottom: vw(12);
+
+	@include _1024 {
+		max-width: vmin(460);
+		margin-bottom: vmin(60);
+	}
 }
 
 .hero__form {
 	max-width: vw(286);
 	display: flex;
 	flex-direction: column;
+
+	@include _1024 {
+		max-width: vmin(286);
+	}
 }
 
 .hero__btn {
 	position: relative;
 	padding: vw(20) vw(93) vw(20) vw(23);
+
+	@include _1024 {
+		padding: vmin(20) vmin(93) vmin(20) vmin(23);
+	}
 
 	&::before {
 		content: "";
@@ -31,6 +50,11 @@
 		height: vw(14);
 		background: url("../images/icons/phone-icon.svg") center / 100% no-repeat;
 		z-index: 3;
+
+		@include _1024 {
+			width: vmin(14);
+			height: vmin(14);
+		}
 	}
 
 	&::after {
@@ -41,6 +65,11 @@
 		width: vw(21);
 		height: vw(8);
 		background: url("../images/icons/arrow-icon.svg") center / 100% no-repeat;
+
+		@include _1024 {
+			width: vmin(21);
+			height: vmin(8);
+		}
 	}
 }
 
@@ -51,6 +80,11 @@
 	width: vw(70);
 	height: vw(32);
 	background-color: rgba(#fff, 0.9);
+
+	@include _1024 {
+		width: vmin(70);
+		height: vmin(32);
+	}
 }
 
 .hero__text {
@@ -59,6 +93,13 @@
 	margin-bottom: vw(61);
 	font-size: vw(24);
 	line-height: vw(29);
+
+	@include _1024 {
+		max-width: vmin(180);
+		margin-bottom: vmin(10);
+		font-size: vmin(14);
+		line-height: 1;
+	}
 }
 
 .hero__text::after {
@@ -69,4 +110,8 @@
 	top: -10%;
 	right: -50%;
 	background: url("../images/icons/point-arrow-icon.svg") center / 100% no-repeat;
+
+	@include _1024 {
+		display: none;
+	}
 }
