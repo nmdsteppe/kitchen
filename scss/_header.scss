@@ -3,13 +3,7 @@
 	justify-content: space-between;
 	align-items: flex-start;
 	padding-top: vw(20);
-    padding-bottom: vw(13);
-}
-
-.header__logo {
-	display: block;
-	width: vw(157);
-	height: vw(47);
+	padding-bottom: vw(13);
 }
 
 .header__box {
@@ -20,38 +14,72 @@
 
 .header__phone {
 	margin-right: vw(60);
-	padding-top: 3px;
-
 	font-size: vw(22);
 	font-weight: 500;
+
+	@include _1024 {
+		display: none;
+	}
+}
+
+.header__phone--mobile {
+	display: none;
+
+	@include _1024 {
+		display: block;
+		padding-top: vmin(30);
+	}
+}
+
+.header__btn {
+	display: none;
+
+	@include _1024 {
+		display: block;
+		margin-bottom: vmin(30);
+	}
 }
 
 .header__burger {
 	position: relative;
-
 	display: block;
-	width: vw(39);
-	height: vw(23);
+	width: vw(40);
+	height: vw(24);
 
-	&::before,
-	&::after {
-		content: "";
-		position: absolute;
-		left: 45%;
-		display: block;
-		width: 100%;
-		height: vw(4);
-		background-color: #000;
-		transition: all 0.3s ease 0s;
+	@include _1024 {
+		width: vmin(40);
+		height: vmin(24);
 	}
+}
 
-	&::before {
-		top: 0;
-	}
+.header__burger::before,
+.header__burger::after,
+.header__burger-span {
+	content: "";
+	position: absolute;
+	left: 45%;
+	display: block;
+	width: vw(40);
+	height: vw(4);
+	background-color: #000;
+	transition: all 0.3s ease 0s;
 
-	&::after {
-		bottom: 0;
+	@include _1024 {
+		width: vmin(40);
+		height: vmin(4);
 	}
+}
+
+.header__burger::before {
+	top: 0;
+}
+
+.header__burger::after {
+	bottom: 0;
+}
+
+.header__burger-span {
+	top: 40%;
 }
 
 .header__burger--active {
@@ -63,17 +91,6 @@
 		bottom: 49%;
 		transform: rotate(-30deg);
 	}
-}
-
-.header__burger span {
-	position: absolute;
-	top: 40%;
-	left: 45%;
-	display: block;
-	width: 100%;
-	height: vw(4);
-	background-color: #000;
-	transition: all 0.3s ease 0s;
 }
 
 .header__burger--active span {
@@ -97,11 +114,21 @@
 .header__list {
 	display: flex;
 	justify-content: space-between;
+
+	@include _1024 {
+		flex-direction: column;
+	}
 }
 
 .header__category {
 	padding-top: vw(28);
 	max-width: vw(246);
+
+	@include _1024 {
+		padding: 0;
+		margin-bottom: vmin(20);
+		max-width: 100%;
+	}
 }
 
 .header__category:nth-child(2) {
@@ -116,19 +143,14 @@
 	font-size: vw(24);
 	font-weight: 500;
 	margin-bottom: vw(24);
+
+	@include _1024 {
+		font-size: vmin(24);
+	}
 }
 
 .header__item {
 	margin-bottom: vw(11);
-}
-
-.header__sublist {
-	padding-top: 1px;
-}
-
-.header__line-break {
-	display: block;
-	margin-top: -4px;
 }
 
 .header__sublink {

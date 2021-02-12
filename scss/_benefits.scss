@@ -8,14 +8,29 @@
 	left: 0;
 	transform: translateY(-71%);
 	display: flex;
+
+	@include _1024 {
+		position: static;
+		flex-direction: column;
+		transform: none;
+	}
 }
 
 .benefits__text {
 	max-width: vw(520);
 	padding: vw(54) vw(59);
 	font-size: vw(24);
-	background: url("../images/benefits-bg.png") no-repeat;
-	background-size: cover;
+	background: url("../images/benefits-bg.png") center / cover no-repeat;
+	background-color: rgba($color: #a7a7a7, $alpha: 0.8);
+
+	@include _1024 {
+		position: static;
+		flex-direction: column;
+		max-width: 100%;
+		padding: 0;
+		font-size: inherit;
+		background: none;
+	}
 }
 
 .benefits__text:first-child {
@@ -24,4 +39,3 @@
 .benefits__text:nth-child(2) {
 	margin-right: vw(75);
 }
-

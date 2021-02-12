@@ -1,16 +1,29 @@
 .add-info {
 	padding: vw(60) vw(131) vw(21) vw(50);
 	background-color: #fff;
+
+	@include _1024 {
+		padding: vmin(40) vmin(10) vmin(10);
+	}
 }
 
 .add-info--delivery {
 	margin-right: vw(16);
+
+	@include _1024 {
+		margin: 0;
+		margin-bottom: vmin(60);
+	}
 }
 
 .add-info--delivery,
 .add-info--warranty {
 	max-width: vw(630);
 	position: relative;
+
+	@include _1024 {
+		max-width: 100%;
+	}
 }
 
 .add-info--delivery::before {
@@ -20,8 +33,12 @@
 	left: 9%;
 	height: vw(80);
 	width: vw(80);
-	background: url("../images/icons/delivery-icon.svg") no-repeat;
-	background-size: cover;
+	background: url("../images/icons/delivery-icon.svg") center / cover no-repeat;
+
+	@include _1024 {
+		height: vmin(60);
+		width: vmin(60);
+	}
 }
 
 .add-info--warranty::before {
@@ -31,24 +48,44 @@
 	left: 9%;
 	height: vw(60);
 	width: vw(60);
-	background: url("../images/icons/warranty-contract-icon.svg") no-repeat;
-	background-size: cover;
+	background: url("../images/icons/warranty-contract-icon.svg") center / cover no-repeat;
+
+		@include _1024 {
+		height: vmin(50);
+		width: vmin(50);
+	}
 }
 
 .add-info--adress {
 	font-size: vw(24);
+
+	@include _1024 {
+		font-size: inherit;
+	}
 }
 
 .add-info__wrapper {
 	display: flex;
+
+	@include _1024 {
+		flex-direction: column;
+	}
 }
 
 .add-info__inner {
 	max-width: vw(540);
+
+	@include _1024 {
+		max-width: 100%;
+	}
 }
 
 .add-info__inner:not(:last-child) {
 	margin-right: vw(110);
+
+	@include _1024 {
+		margin: 0;
+	}
 }
 
 .add-info__link {

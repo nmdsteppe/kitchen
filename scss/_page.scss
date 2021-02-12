@@ -5,4 +5,8 @@
 	font-size: vw(18);
 	line-height: 1.5;
 	color: $text-color;
+
+	@include _1024 {
+		font-size: vmin(16);
+	}
 }

@@ -3,4 +3,8 @@
 	font-size: vw(48);
 	font-weight: 500;
 	line-height: 1;
+
+	@include _1024 {
+		font-size: vmin(32);
+	}
 }

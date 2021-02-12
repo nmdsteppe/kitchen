@@ -6,6 +6,17 @@
 	display: flex;
 	justify-content: space-between;
 	max-width: vw(967);
+
+	@include _1024 {
+		flex-direction: column;
+		max-width: 100%;
+	}
+}
+
+.info__item {
+	@include _1024 {
+		margin-bottom: vmin(30);
+	}
 }
 
 .info__text {
@@ -13,6 +24,11 @@
 	margin: 0;
 	padding-top: vw(80);
 	font-size: vw(24);
+
+	@include _1024 {
+		padding-top: vmin(44);
+		font-size: vmin(22);
+	}
 }
 
 .info__text--order::before {
@@ -22,8 +38,12 @@
 	width: vw(80);
 	top: 0;
 	left: 0;
-	background: url("../images/icons/kitchen-icon.svg") no-repeat;
-	background-size: cover;
+	background: url("../images/icons/kitchen-icon.svg") center / cover no-repeat;
+
+	@include _1024 {
+		height: vmin(40);
+		width: vmin(40);
+	}
 }
 
 .info__text--warranty::before {
@@ -33,8 +53,12 @@
 	width: vw(80);
 	top: 0;
 	left: 0;
-	background: url("../images/icons/warranty-contract-icon.svg") no-repeat;
-	background-size: cover;
+	background: url("../images/icons/warranty-contract-icon.svg") center / cover no-repeat;
+
+	@include _1024 {
+		height: vmin(40);
+		width: vmin(40);
+	}
 }
 
 .info__text--delivery::before {
@@ -44,11 +68,19 @@
 	width: vw(100);
 	top: 0;
 	left: 0;
-	background: url("../images/icons/delivery-icon.svg") no-repeat;
-	background-size: cover;
+	background: url("../images/icons/delivery-icon.svg") center / cover no-repeat;
+
+	@include _1024 {
+		height: vmin(40);
+		width: vmin(60);
+	}
 }
 
 .info__link {
 	font-size: vw(15);
 	border-bottom: 1px solid #000;
+
+	@include _1024 {
+		font-size: vmin(12);
+	}
 }

@@ -1,11 +1,20 @@
 .lead-trigger {
 	min-height: vw(800);
-	background: url("../images/footer-desktop-bg.jpg") 50% 50% no-repeat;
-	background-size: cover;
+	background: url("../images/footer-desktop-bg.jpg") 50% 50% / cover no-repeat;
+
+	@include _1024 {
+		min-height: vmin(600);
+		background-image: url("../images/footer-mobile-bg.jpg") bottom / cover no-repeat;
+		background-position: center bottom;
+	}
 }
 
 .lead-trigger__wrapper {
 	padding-top: vw(70);
+
+	@include _1024 {
+		padding: 0;
+	}
 }
 
 .lead-trigger__form {
@@ -16,11 +25,21 @@
 	margin: 0 auto;
 	margin-bottom: vw(200);
 	padding: vw(50);
-	background: url("../images/lead-trigger-form-bg.png") no-repeat;
-	background-size: cover;
+	background: url("../images/lead-trigger-form-bg.png") center / cover no-repeat;
+
+	@include _1024 {
+		max-width: 100%;
+		margin: 0;
+		padding: vmin(10) 0 0;
+	}
 }
 
 .lead-trigger__btn {
 	margin-top: vw(30);
 	margin-bottom: vw(10);
+
+	@include _1024 {
+		margin-top: vmin(30);
+		margin-bottom: vmin(10);
+	}
 }

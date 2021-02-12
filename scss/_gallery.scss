@@ -1,13 +1,26 @@
 .gallery {
 	max-width: vw(583);
+
+	@include _1024 {
+		max-width: 100%;
+	}
 }
 
 .gallery__big-image img {
 	height: vw(540);
 	object-fit: cover;
+
+	@include _1024 {
+		height: vmin(220);
+	}
 }
 
 .gallery__preview-image img {
 	width: vw(79);
 	height: vw(73);
+
+	@include _1024 {
+		width: vmin(36);
+		height: vmin(33);
+	}
 }
