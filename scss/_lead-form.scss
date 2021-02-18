@@ -12,7 +12,7 @@
 	}
 }
 
-.lead-form__label:not(:last-child) {
+.lead-form__input:not(:last-child) {
 	margin-bottom: vw(10);
 
 	@include _1024 {

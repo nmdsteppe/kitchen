@@ -114,8 +114,7 @@
 					<label class="visually-hidden" for="name">Поле для ввода имени</label>
 					<input class="lead-form__input" id="name" type="text" name="user-name" placeholder="Как вас зовут?">
 					<label class="visually-hidden" for="name">Поле для ввода номера телефона</label>
-					<input class="lead-form__input" id="phone" type="text" name="user-phone"
-						placeholder="+7 ___ ___-__-__">
+					<input class="lead-form__input" id="phone" type="text" name="user-phone" placeholder="+7 ___ ___-__-__">
 					<button class="btn-action hero__btn" type="submit">
 						Перезвоните мне <span class="hero__icons"></span>
 					</button>
@@ -477,12 +476,15 @@
 			<form class="lead-form lead-trigger__form" action="#" method="POST">
 				<p class="lead-form__title">Все еще думаете?</p>
 				<p class="lead-form__text">Давайте обсудим детали вашей кухни и ответим на все вопросы!</p>
-				<label class="visually-hidden" for="name">Поле для ввода имени</label>
-				<input class="lead-form__input lead-form__input--transparent" id="name" type="text" name="user-name"
-					placeholder="Как вас зовут?">
-				<label class="visually-hidden" for="name">Поле для ввода номера телефона</label>
-				<input class="lead-form__input lead-form__input--transparent" id="phone" type="text" name="user-phone"
-					placeholder="+7 ___ ___-__-__">
+				<label class="lead-form__label">
+					<span class="visually-hidden">Как вас зовут</span>
+					<input type="text" class="lead-form__input lead-form__input--transparent" placeholder="Ваше имя">
+				</label>
+				<label class="lead-form__label">
+					<span class="visually-hidden">Ваш номер телефона</span>
+					<input type="text" class="lead-form__input lead-form__input--transparent"
+						placeholder="+7 ___ ___-__-__">
+				</label>
 				<button class="btn-action lead-trigger__btn" type="submit">Перезвоните мне</button>
 				<p class="lead-form__policy lead-form__policy--white">соглашаюсь на обработку персональных данных
 				</p>

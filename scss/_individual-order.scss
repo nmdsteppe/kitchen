@@ -19,7 +19,6 @@
 
 .individual-order__inner {
 	display: flex;
-	align-items: center;
 
 	@include _1024 {
 		flex-direction: column;
